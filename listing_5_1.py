@@ -4,7 +4,7 @@
 """
 
 def walk(G, s, S=set()):
-	""" Directly from Python Algorithms 
+	""" Directly from book
 	"""
 	P, Q = dict(), set()
 	P[s] = None

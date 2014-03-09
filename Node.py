@@ -4,7 +4,7 @@
 """
 
 class Node:
-	""" Directly from Python Algorithms book  
+	""" Directly from book  
 	"""
 	def __init__(self, value, next=None):
 		self.value = value
@@ -13,3 +13,5 @@ class Node:
 # Still directly from book
 L = Node("a", Node("b", Node("c", Node("d"))))
 print(L.next.next.value)
+
+# My work
