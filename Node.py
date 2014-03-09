@@ -18,14 +18,14 @@ L = Node("a", Node("b", Node("c", Node("d"))))
 # print("'%s' is the 1st item in linked list.") % (L.value)
 # print("'%s' is the 2nd item in linked list") % (L.next.value)
 # print("'%s' is the 4nd item in linked list") % (L.next.next.next.value)
-# L = Node("a") # Shorted linked list
+# L = Node("a") # Shortest linked list
 # L = Node("a", Node("b", Node("c", Node("d", Node("e"))))) # Longer linked list
 
 # Walk through the linked list
 i = 0
 while True:
 	
-	location = "L."+"next."*i+"value" # Find location based number of nexts/links
+	location = "L."+"next."*i+"value" # Find location based current number of links
 
 	try: 		
 		print("'%s' is item number %d in linked list.") % (eval(location), i+1)
