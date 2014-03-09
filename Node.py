@@ -15,7 +15,16 @@ L = Node("a", Node("b", Node("c", Node("d"))))
 # print(L.next.next.value)
 
 # My work
-print("'%s' is the 1st item in linked list.") % (L.value)
-print("'%s' is the 2nd item in linked list") % (L.next.value)
+# print("'%s' is the 1st item in linked list.") % (L.value)
+# print("'%s' is the 2nd item in linked list") % (L.next.value)
+# print("'%s' is the 4nd item in linked list") % (L.next.next.next.value)
 
-# TODO: walk through linked list to find all values
+for i in xrange(10): # TODO: make a while loop
+
+	value = "L."+"next."*i+"value"
+
+	try: 		
+		print("'%s' is the number %d item in linked list.") % (eval(value), i+1)
+	except:
+		# print "past end of list"
+		break
