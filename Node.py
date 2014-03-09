@@ -19,12 +19,13 @@ L = Node("a", Node("b", Node("c", Node("d"))))
 # print("'%s' is the 2nd item in linked list") % (L.next.value)
 # print("'%s' is the 4nd item in linked list") % (L.next.next.next.value)
 
+# Walk through linked list
 for i in xrange(10): # TODO: make a while loop
 
-	value = "L."+"next."*i+"value"
+	location = "L."+"next."*i+"value" # Find based number of nexts/links
 
 	try: 		
-		print("'%s' is the number %d item in linked list.") % (eval(value), i+1)
+		print("'%s' is the number %d item in linked list.") % (eval(location), i+1)
 	except:
-		# print "past end of list"
+		# print "past end of linked list"
 		break
