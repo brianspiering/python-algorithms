@@ -22,12 +22,14 @@ L = Node("a", Node("b", Node("c", Node("d"))))
 # L = Node("a", Node("b", Node("c", Node("d", Node("e"))))) # Longer linked list
 
 # Walk through the linked list
-for i in xrange(10000000000000000): # A kludge, the linked list will never be that big
-
+i = 0
+while True:
+	
 	location = "L."+"next."*i+"value" # Find location based number of nexts/links
 
 	try: 		
 		print("'%s' is item number %d in linked list.") % (eval(location), i+1)
+		i += 1
 	except AttributeError:
 		# print "Past end of current linked list."
 		break
