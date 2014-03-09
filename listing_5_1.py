@@ -15,9 +15,3 @@ def walk(G, s, S=set()):
 			Q.add(v)
 			P[v] = u
 	return P
-
-# My own work
-G = [1,2]
-u = 1
-test = walk(G, u)
-print(test)
