@@ -12,6 +12,10 @@ class Node:
 
 # Still directly from book
 L = Node("a", Node("b", Node("c", Node("d"))))
-print(L.next.next.value)
+# print(L.next.next.value)
 
 # My work
+print("'%s' is the 1st item in linked list.") % (L.value)
+print("'%s' is the 2nd item in linked list") % (L.next.value)
+
+# TODO: walk through linked list to find all values
