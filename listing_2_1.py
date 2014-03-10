@@ -10,7 +10,20 @@
 # Assign in a more pythonic way
 import string
 
-for i in xrange(8): # TODO: Make into one-liner
-    exec(string.lowercase[i]+' = i') 
+for _ in xrange(8): # TODO: Make into one-liner
+    exec(string.lowercase[_]+' = _') 
     
 # Back to code from book
+N=[
+{b, c, d, e, f}, #a
+{c, e}, #b
+{d}, #c 
+{e}, #d 
+{f}, #e 
+{c, g, h}, #f
+{f, h}, #g
+{f, g} #h
+]
+
+b in N[a] # Neighborhood membership
+len(N[f]) # Degree
