@@ -13,3 +13,4 @@ import string
 for i in xrange(8): # TODO: Make into one-liner
     exec(string.lowercase[i]+' = i') 
     
+# Back to code from book
