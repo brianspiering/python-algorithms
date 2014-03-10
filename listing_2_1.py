@@ -4,10 +4,12 @@
 """
 
 # Directly from book 
-a, b, c, d, e, f, g, h = range(8)
+# a, b, c, d, e, f, g, h = range(8)
 
 # My work
 # Assign in a more pythonic way
 import string
 
-letters = list(string.lowercase[0:8]) 
+for i in xrange(8): # TODO: Make into one-liner
+    exec(string.lowercase[i]+' = i') 
+    
