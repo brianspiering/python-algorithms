@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-""" Exploring code from Listing 5-1 on page 105 
+""" Exploring code from Chapter 2 of Python Algorithms
 """
 
 def walk(G, s, S=set()):
-	""" Directly from book
+	""" Directly from book, p 105
 	"""
 	P, Q = dict(), set()
 	P[s] = None
