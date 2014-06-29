@@ -73,4 +73,10 @@ len(N[f]) # Degree
 # 	[0,0,0,0,0,1,0,1], # g 
 # 	[0,0,0,0,0,1,1,0]] # h
 
-# TODO: Add code from page 31
+# The Bunch pattern, page 34
+from bunch import Bunch
+
+x = Bunch(name="Jayne Cobb", position="Public Relations")
+
+T = Bunch
+t = T(left=T(left="a", right="b"), right=T(left="c"))
